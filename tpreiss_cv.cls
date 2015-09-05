@@ -4,21 +4,26 @@
 \RequirePackage{fontspec}
 \RequirePackage{geometry}
 
-\setmainfont{Calibri}
+\setmainfont{Calibril}
+\newfontfamily\calibri{Calibri}
 \geometry{a4paper, portrait, margin=0.5in}
 
 \titleformat{\section}         			% Customise the \section command 
-  	{\Large\raggedright} 	% Make the \section headers large (\Large),
+  	{\Large\calibri\raggedright} 	% Make the \section headers large (\Large),
                                				% small capitals (\scshape) and left aligned (\raggedright)
   	{}{0em}                      		% Can be used to give a prefix to all sections, like 'Section ...'
   	{}                           			% Can be used to insert code before the heading
   	[\titlerule]                 			% Inserts a horizontal line after the heading
 	
 \titleformat{\subsection}
-  {\large\raggedright}
+  {\large\calibri\raggedright}
   {}{0em}
   {}
 	
 \newcommand{\company}[2]{%
   	\subsection[#1]{#1 \hfill #2}%
+}
+
+\newcommand{\position}[1]{%
+	\textit{#1}%
 }
