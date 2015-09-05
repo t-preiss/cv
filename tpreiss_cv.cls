@@ -19,11 +19,15 @@
   {\large\calibri\raggedright}
   {}{0em}
   {}
-	
-\newcommand{\company}[2]{%
+		
+\newcommand{\organization}[2]{%
   	\subsection[#1]{#1 \hfill #2}%
 }
 
 \newcommand{\position}[1]{%
 	\textit{#1}%
+}
+
+\newcommand{\gpa}[2]{%
+	GPA: #1/#2
 }
