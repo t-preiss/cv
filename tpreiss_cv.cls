@@ -31,3 +31,11 @@
 \newcommand{\gpa}[2]{%
 	GPA: #1/#2
 }
+
+\newcommand{\email}[1]{%
+	email: #1 %
+}
+
+\newcommand{\cell}[1]{%	
+	cell: #1 %
+}
